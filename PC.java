@@ -16,15 +16,3 @@ class PC {
         return totalPower * duration;        
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
