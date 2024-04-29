@@ -10,7 +10,11 @@ public class Test {
 
         PC pc = new PC(cpu, new Peripheral[]{keyboard, monitor});
         
-        double powerConsumption = pc.calculatePowerConsumption(5);
-        System.out.println("Power consumption of the PC: " + powerConsumption + " Watts");
+        try {
+            double powerConsumption = pc.calculatePowerConsumption(5);
+            System.out.println("Power consumption of the PC: " + powerConsumption + " Watts");
+        } catch (ConsoException e) {
+            System.out.println("Exception: " + e.getMessage());        
+        }
     }
 }
