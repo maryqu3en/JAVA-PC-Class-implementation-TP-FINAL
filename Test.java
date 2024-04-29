@@ -14,7 +14,7 @@ public class Test {
             double powerConsumption = pc.calculatePowerConsumption(5);
             System.out.println("Power consumption of the PC: " + powerConsumption + " Watts");
         } catch (ConsoException e) {
-            System.out.println("Exception: " + e.getMessage());        
+            System.out.println("Exception: " + e.getMessage());
         }
     }
 }

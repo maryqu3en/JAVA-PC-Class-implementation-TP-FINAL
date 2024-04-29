@@ -12,7 +12,7 @@ class PC {
         for (Peripheral peripheral : peripherals) {
             totalPower += peripheral.calculatePower(); 
         }
-        float pwrconso = totalPower * duration;
+        double pwrconso = totalPower * duration;
         if (pwrconso > 1000) {
             throw new ConsoException("Power consumption exceeds 1000 Watts");
         }
